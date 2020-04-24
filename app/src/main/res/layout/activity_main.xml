@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F7F7F7"
+    android:background="#f4f4f4"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -15,76 +15,79 @@
         android:layout_marginTop="16dp"
         android:gravity="center"
         android:text="Arby's"
-        android:textAllCape="true"
+        android:textAllCaps="true"
         android:textColor="#000000"
         android:textSize="32sp"
         android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/image"
+        android:id="@+id/sun_image"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_below="@+id/title"
         android:layout_marginTop="32dp"
-        android:src="@drawable/logo" />
+        android:src="@drawable/sandwich" />
+
     <EditText
-        android:layout_width="300dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:hint="@string/Nome"
+        android:ems="9"
+        android:hint="Name"
         android:layout_gravity="center"
-        />
+        android:maxLines="1"
+        android:maxLength="15"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:gravity="center"
-        android:text="Preço 53EUR"
-        android:textAllCape="true"
+        android:text="Price: 15€"
+        android:textAllCaps="true"
         android:textColor="#000000"
-        android:textSize="32sp"
+        android:textSize="25sp"
         android:textStyle="bold" />
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="24dp">
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="-"
-            />
+            android:text="-"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
-            android:textSize="32sp"
+            android:textSize="29sp"
             android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            />
-        <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="+"
-        />
+            android:layout_marginRight="16dp"/>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"/>
 
     </LinearLayout>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="OK"
-        android:layout_gravity="center"
+        android:ems="13"
+        android:text="order"
         android:layout_marginTop="16dp"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAligment="center"
-        android:layout_marginTop="16dp"
-        android:layout_gravity="center"
-        android:text="Seu Total é Obrigado Por nos viSitar"
+        android:layout_gravity="center"/>
 
-        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        android:text="Your total is $15! Thanks for buying with us."/>
 </LinearLayout>
